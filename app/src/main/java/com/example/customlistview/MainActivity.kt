@@ -34,12 +34,11 @@ class MainActivity : AppCompatActivity() {
         mylistView.setOnItemClickListener{ parent,view,position,id ->
             Log.i("Listview Item",position.toString())
             val itemText = parent.getItemAtPosition(position) as String
-            //Toast.makeText(this, itemText, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, itemText, Toast.LENGTH_SHORT).show()
 
             //open new Activity
             val i = Intent(this,Profile_Activity::class.java)
             //sent data to new Activity
-            i.putExtra("name",name)
             i.putExtra("selecttedname",itemText)
             startActivity(i)
         }

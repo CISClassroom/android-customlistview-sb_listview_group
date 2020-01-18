@@ -18,17 +18,17 @@ public class StudentAdapter (var mCtx: Context,
     override fun getView(position: Int,
                          convertView: View?,
                          parent: ViewGroup): View {
-        val layout:LayoutInflater = LayoutInflater.from(mCtx)
 
+        val layout:LayoutInflater = LayoutInflater.from(mCtx)
         val v: View = layout.inflate(resource,null)
-        val icon: ImageView = v.findViewById(R.id.imageView)
-        val name: TextView = v.findViewById(R.id.textView5)
-        val id: TextView = v.findViewById(R.id.textView6)
+        val icon: ImageView = v.findViewById(R.id.studentphoto)
+        val name: TextView = v.findViewById(R.id.namestudent)
+        val idstudent: TextView = v.findViewById(R.id.idstudent)
 
         val students:Students = items[position]
 
         name.text = students.name
-        id.text = students.id
+        idstudent.text = students.idstudent
         icon.setImageDrawable(mCtx.getDrawable(students.icon))
         return v
 

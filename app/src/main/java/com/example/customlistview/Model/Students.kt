@@ -1,6 +1,6 @@
 package com.example.customlistview.Model
 
-public class Students (val name: String,val id:String,val icon:Int){}
+data class Students (val namefacebook: String,val name:String, val idstudent:String,val major:String,val email:String,val mobilephone:String,val github:String,val coverprofile:Int, val icon:Int)
 
 
 //*********************************
@@ -11,4 +11,10 @@ public class Students (val name: String,val id:String,val icon:Int){}
 //    int icon:
 //}
 
-
+//- ชื่อ-นามสกุล
+//- รหัสนักศึกษา
+//- รูปภาพ
+//- สาขาวิชา
+//- อีเมล
+//- เบอร์โทรศัพท์
+//- Github
