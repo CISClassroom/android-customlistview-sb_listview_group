@@ -33,7 +33,15 @@ class CustomListActivity : AppCompatActivity() {
 
         var  liststudent = mutableListOf<Students>()
 
-        liststudent.add(Students)
+        liststudent.add(Students("ด.ช. ท๊อปฟี่",
+            "นาย อภิเดช นารอง",
+            "603410071-9",
+            "สาขา วิทยาการคอมพิวเตอร์และสารสนเทศ",
+            "apidech.narong@kkumail.com",
+            "0944-505384",
+            "https://github.com/topjimeoww",
+            R.drawable.cover_top,
+            R.drawable.profile_top))
 
 
         Log.i("tag",Students.toString())
