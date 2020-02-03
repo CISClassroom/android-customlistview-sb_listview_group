@@ -44,6 +44,16 @@ class CustomListActivity : AppCompatActivity() {
             R.drawable.profile_top))
 
 
+        liststudent.add(Students("basss kissada",
+            "นาย กฤษดา อุ่นสำโรง",
+            "603410194-3",
+            "สาขา วิทยาการคอมพิวเตอร์และสารสนเทศ",
+            "kissadaunsumrong@kkumail.com",
+            "0822081074",
+            "https://github.com/kissadaunsumrong",
+            R.drawable.cover_bass,
+            R.drawable.profile_bass))
+
         Log.i("tag",Students.toString())
 
         var  listView :ListView = findViewById(R.id.Listview) //listview
